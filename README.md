@@ -2,7 +2,8 @@
 
 Small per-course JSON files ("lite v1") used by the Stroke Saver golf app to show hole lines, greens (front / centre / back), tees and hazards on top of a satellite map, for golf courses worldwide.
 
-- Path: `lite/osm-w<way id>.json` or `lite/osm-r<relation id>.json`
+- Path: `lite/osm-w<way id>.json` or `lite/osm-r<relation id>.json`; a further course split out of a multi-course
+  outline is `lite/osm-<parent id>-<k>.json` (k = 2, 3, …; `parentId` and `courseName` in the file)
 - Index: `lite_index.json` (id → country, usable holes, confidence, bytes, sha256)
 - Format: see the "lite package" section of the Stroke Saver course-package contract.
 
